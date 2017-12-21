@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="multi browser suite" parallel="tests" thread-count="2">
+   
+    <parameter name="driverPath" value="/Users/surya/Documents/selenium/softwares/"></parameter>
+    
+    <test name="chrome test">
+        <parameter name="brName" value="chrome"></parameter>
+        <classes>
+            <class name="in.srssprojects.keximbank.MultiBrowser">
+                
+            </class>
+        </classes>
+    </test>
+   
+    <test name="firefox test">
+        <parameter name="brName" value="firefox"></parameter>
+        <classes>
+            <class name="in.srssprojects.keximbank.MultiBrowser">
+                
+            </class>
+        </classes>
+    </test>
+    
+</suite>
