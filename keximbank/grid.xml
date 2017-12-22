@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="grid" parallel="tests" thread-count="2">
+    
+    <test name="mac chrome">
+        <parameter name="brName" value="chrome"></parameter>
+        <parameter name="platform" value="mac"></parameter>
+        <parameter name="nodeURL" value="http://192.168.47.1:5555/wd/hub"/>
+        <classes>
+            <class name="in.srssprojects.keximbank.GridExecution">
+                <methods>
+                    <include name="branchSearch"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+   
+    <test name="linux firefox">
+        <parameter name="brName" value="firefox"></parameter>
+        <parameter name="platform" value="linux"></parameter>
+        <parameter name="nodeURL" value="http://192.168.1.14:5555/wd/hub"/>
+        <classes>
+            <class name="in.srssprojects.keximbank.GridExecution">
+                <methods>
+                    <include name="branchSearch"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    
+</suite>
